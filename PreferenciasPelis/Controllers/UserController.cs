@@ -20,7 +20,7 @@ namespace Api.Peliculas.Controllers
         [Route("CrearUsuario")]
         public ActionResult<ApiResponse> CrearUsuario(string UserName, string PassWord)
         {
-            return Ok(_userSer.InsertarUsuario(UserName, PassWord));
+            return Ok(_userSer.InsertarUsuario(UserName, PassWord)); 
         }
 
         [HttpGet]

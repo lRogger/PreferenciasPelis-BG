@@ -3,13 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using PreferenciaPeli.Entidades;
 using PreferenciaPeli.IRepositorios;
-using PreferenciaPeli.ModeloVista.DTO;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PreferenciaPeli.Repositorios
 {
@@ -37,7 +31,6 @@ namespace PreferenciaPeli.Repositorios
                 DBresult = mensaje.Value?.ToString();
             }
             return DBresult!;
-
         }
 
         public async Task<Tuple<List<UserRegistradoDS>, string>> GetUsersRegistrados()
