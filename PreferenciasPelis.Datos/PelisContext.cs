@@ -23,6 +23,7 @@ namespace PreferenciaPeli.Datos
         {
             if (!optionsBuilder.IsConfigured)
                 optionsBuilder.UseSqlServer("Name=Pelis");
+            //
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
